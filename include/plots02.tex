@@ -1,9 +1,51 @@
-\frame{
-    \frametitle{Sample Page 2}
-    \framesubtitle{An Example of Lists}
-    \begin{itemize}
-        \item 1
-        \item 2
-        \item 3
-    \end{itemize}
-}
+\begin{frame}
+    
+    \frametitle{CPU Frequency Influence}
+    \begin{minipage}{.41\paperwidth}
+        \begin{figure}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    width=1\textwidth,
+                    view/h=30,
+                    view/v=10,
+                    colormap/cool,
+                    xlabel={CPU freq [GHz]}, ylabel={input}, zlabel={runtime [s]},
+                    %zmin=0,xmin=1.5,ymin=1,
+                    zmax=50,
+                    point meta min=0
+                    ]
+                    \addplot3[surf] table {data/3D/replicated-bin.dat};
+                \end{axis}
+            \end{tikzpicture}
+            \begin{itemize}
+                \item Ref.Problem: Scalable Search
+                \item Protocol: TTP
+                \item Node: todd
+            \end{itemize}
+        \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+        \begin{figure}
+            \begin{tikzpicture}
+                \begin{axis}[
+                    width=1\textwidth,
+                    view/h=30,
+                    view/v=10,
+                    colormap/cool,
+                    xlabel={CPU freq [GHz]}, ylabel={input},% zlabel={runtime [s]},
+                    %zmin=0,xmin=1.5,ymin=1,
+                    zmax=50,
+                    point meta min=0
+                    ]
+                    \addplot3[surf] table {data/3D/malicious-rep-bin.dat};
+                \end{axis}
+            \end{tikzpicture}
+            \begin{itemize}
+                \item Ref.Problem: Scalable Search
+                \item Protocol: TTP
+                \item Node: todd
+            \end{itemize}
+        \end{figure}
+    \end{minipage}
+\end{frame}

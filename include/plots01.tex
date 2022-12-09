@@ -1,8 +1,9 @@
 \begin{frame}
-    \frametitle{TTP Unconcealed Computation in C++\\
-    Reference Problem: Scalable Search}
+    \frametitle{TTP}
+
+    \begin{minipage}{.41\paperwidth}
     \begin{figure}
-        \begin{tikzpicture}
+        \begin{tikzpicture}[scale = 0.70]
             \begin{axis}[
                 xlabel={input size [$10^6$]},
                 %xmin=1, ymin=1,
@@ -12,8 +13,33 @@
         
             \end{axis}
         \end{tikzpicture}
-        \caption{TTP computation of Scalable Search on todd}
-        \label{fig:ttpfull}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Protocol: TTP
+            \item Node: todd
+        \end{itemize}
     \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+        \begin{figure}
+            \begin{tikzpicture}[scale = 0.70]
+                \begin{axis}[
+                    xlabel={input size [$10^6$]},
+                    %xmin=1, ymin=1,
+                    ylabel={\ }
+                    ]
+            
+                    \addplot[mark=none, color=blue, thick] table {data/ttpfull.dat};
+            
+                \end{axis}
+            \end{tikzpicture}
+            \begin{itemize}
+                \item Ref.Problem: Scalable Search
+                \item Protocol: TTP
+                \item Node: todd
+            \end{itemize}
+    \end{figure}
+    \end{minipage}
 
 \end{frame}
