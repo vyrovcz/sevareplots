@@ -8,9 +8,10 @@
                 xlabel={input size},
                 legend pos=north west,
                 %xmin=1, ymin=1,
+                xmax=4200, ymax=2,
                 ylabel={runtime [s]}]
         
-                \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/enc/2D/runtimerep3-ext.dat};
+                \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/unenc/2D/runtimerep3-ext.dat};
                 \legend{rep3-bin, yao, yaoO}
             \end{axis}
         \end{tikzpicture}
@@ -30,10 +31,11 @@
                     xlabel={input size},
                     legend pos=north west,
                     %xmin=1, ymin=1,
+                    xmax=4200, ymax=2,
                     ylabel={\ }
                     ]
             
-                    \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/unenc/2D/runtimerep3-ext.dat};
+                    \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/enc/2D/runtimerep3-ext.dat};
                     \legend{rep3-bin, yao, yaoO}
                 \end{axis}
             \end{tikzpicture}
