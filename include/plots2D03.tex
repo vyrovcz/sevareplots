@@ -1,0 +1,26 @@
+\begin{frame}
+    \frametitle{RepSearch Compile Time}
+
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={input size},
+                legend pos=north west,
+                %xmin=1, ymin=1,
+                ylabel={\ }
+                ]
+        
+                \addplot[mark=|, color=blue, thick] table {data/v1/2D/compiletime.dat};
+                \addplot[mark=|, color=red, thick] table {data/v2/2D/compiletime.dat};
+                \legend{v1, v2}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Protocols: MP-SPDZ
+            \item Metric: Compile time
+            \item Node: ether
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
