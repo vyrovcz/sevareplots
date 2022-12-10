@@ -1,0 +1,53 @@
+\begin{frame}
+    \frametitle{RepSearch Packetdrop at Input 4096}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xlabel={packetdrop [\%]},
+                legend pos=north west,
+                %xmin=1, ymin=1,
+                ylabel={runtime [s]}]
+        
+                \addplot[mark=|, color=blue, thick] table {data/rep3bin-test01/v1/2D/dropsrep3.dat};
+                \addplot[mark=|, color=red, thick] table {data/rep3bin-test01/v1/2D/dropsyao.dat};
+                \addplot[mark=|, color=green, thick] table {data/rep3bin-test01/v1/2D/dropsyaoO.dat};
+                \legend{rep3-bin, yao, yaoO}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search v1
+            \item Protocols: MP-SPDZ
+            \item Metric: Packetdrops - Runtime at input 4096
+            \item Node: ether
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+        \begin{figure}
+            \begin{tikzpicture}[scale = 0.70]
+                \begin{axis}[
+                    xlabel={packetdrop [\%]},
+                    legend pos=north west,
+                    %xmin=1, ymin=1,
+                    ylabel={\ }
+                    ]
+            
+                    \addplot[mark=|, color=blue, thick] table {data/rep3bin-test01/v2/2D/dropsrep3.dat};
+                    \addplot[mark=|, color=red, thick] table {data/rep3bin-test01/v2/2D/dropsyao.dat};
+                    \addplot[mark=|, color=green, thick] table {data/rep3bin-test01/v2/2D/dropsyaoO.dat};
+                    \legend{rep3-bin, yao, yaoO}
+                \end{axis}
+            \end{tikzpicture}
+            \begin{itemize}
+                \item Ref.Problem: Scalable Search v2
+                \item Protocols: MP-SPDZ
+                \item Metric: Packetdrops - Runtime at input 4096
+                \item Node: ether
+            \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}

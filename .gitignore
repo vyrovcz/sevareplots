@@ -1,5 +1,6 @@
 build/
 *.tar.gz
+*.pdf
 
 # common editor backups
 .*.sw?
