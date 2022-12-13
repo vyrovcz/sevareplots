@@ -1,0 +1,264 @@
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Non-Optimized vs Optimized d1}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.026,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d1noopt.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d1noopt.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d1noopt.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d1noopt.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d1noopt.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d1noopt.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 0 (Non-Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.026,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d1.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d1.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d1.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d1.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d1.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d1.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 1 (Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Non-Optimized vs Optimized d8}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.003,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d8noopt.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d8noopt.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d8noopt.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d8noopt.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d8noopt.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d8noopt.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 0 (Non-Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.003,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d8.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d8.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d8.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d8.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d8.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d8.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 1 (Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Non-Optimized vs Optimized d64}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d64noopt.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d64noopt.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d64noopt.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d64noopt.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d64noopt.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d64noopt.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 0 (Non-Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d64.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d64.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d64.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d64.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d64.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d64.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 1 (Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Non-Optimized vs Optimized d128}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d128noopt.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d128noopt.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d128noopt.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128noopt.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d128noopt.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d128noopt.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 0 (Non-Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d128.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d128.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d128.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d128.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d128.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 1 (Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Non-Optimized vs Optimized d256}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d256noopt.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d256noopt.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d256noopt.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d256noopt.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d256noopt.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d256noopt.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 0 (Non-Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                xmax=4500,ymax=0.002,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d256.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d256.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d256.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d256.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d256.dat};
+                \addplot[mark=|, color=magenta,thick] table {data/mpslice-01/2D/p6/d256.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -o 1 (Optimized)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
