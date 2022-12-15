@@ -1,6 +1,6 @@
 \begin{frame}
     
-    \frametitle{CPU Bandwidth Frequency rep3-bin}
+    \frametitle{Bandwidth CPU-Frequency rep3-bin}
     \begin{minipage}{.41\paperwidth}
         \begin{figure}
             \begin{tikzpicture}
@@ -12,7 +12,7 @@
                     y dir=reverse,
                     xlabel={CPU freq [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
                     %zmin=0,xmin=1.5,ymin=1,
-                    zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                    %zmin=0,zmax=2,xmax=2.5,ymax=1000,
                     point meta min=0
                     ]
                     \addplot3[surf] table {data/rep3bin-test02/unenc/3D/bw-freqrep3.dat};
@@ -38,7 +38,7 @@
                     y dir=reverse,
                     xlabel={CPU freq [GHz]}, ylabel={bandwidth [Mbs]},% zlabel={runtime [s]},
                     %zmin=0,xmin=1.5,ymin=1,
-                    zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                    %zmin=0,zmax=2,xmax=2.5,ymax=1000,
                     point meta min=0
                     ]
                     \addplot3[surf] table {data/rep3bin-test02/enc/3D/bw-freqrep3.dat};

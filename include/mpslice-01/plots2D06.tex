@@ -3,12 +3,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.015,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p1/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p1/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p1/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p1/d256splitRoles.dat};
+                ymax=0.0025,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
@@ -26,12 +26,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.01,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p2/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p2/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p2/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p2/d256splitRoles.dat};
+                ymax=0.0018,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
@@ -49,12 +49,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.01,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p3/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p3/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p3/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p3/d256splitRoles.dat};
+                ymax=0.0018,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
@@ -72,12 +72,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.008,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256splitRoles.dat};
+                ymax=0.0012,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
@@ -95,12 +95,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.008,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p5/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p5/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p5/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p5/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p5/d256splitRoles.dat};
+                ymax=0.0015,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
@@ -118,12 +118,12 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                ymax=0.0025,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
-                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p6/d1splitRoles.dat};
-                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p6/d8splitRoles.dat};
-                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p6/d64splitRoles.dat};
-                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p6/d128splitRoles.dat};
-                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p6/d256splitRoles.dat};
+                ymax=0.0005,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d256splitRoles.dat};
                 \legend{d1, d8, d64, d128, d256}
             \end{axis}
         \end{tikzpicture}
