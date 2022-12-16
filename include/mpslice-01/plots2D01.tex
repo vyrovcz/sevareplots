@@ -3,7 +3,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.005,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p1/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p1/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p1/d64.dat};
@@ -26,7 +26,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.005,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p2/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p2/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p2/d64.dat};
@@ -49,7 +49,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.005,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p3/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p3/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p3/d64.dat};
@@ -72,7 +72,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.0025,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64.dat};
@@ -95,7 +95,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.0025,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p5/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p5/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p5/d64.dat};
@@ -118,7 +118,7 @@
     \begin{figure}
         \begin{tikzpicture}
             \begin{axis}[
-                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                ymax=0.001,xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
                 \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p6/d1.dat};
                 \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p6/d8.dat};
                 \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p6/d64.dat};
