@@ -9,7 +9,7 @@
                 \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw.dat};
                 \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw.dat};
                 \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw.dat};
-                \addplot[mark=|, color=magenta,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw.dat};
                 \legend{s1, s2, s3, s4, s5, s6}
             \end{axis}
         \end{tikzpicture}
@@ -18,6 +18,82 @@
             \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
             \item Metric: bandwidth - runtime
             \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - Zoomed}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.005,xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},legend pos=north east]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256bw.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256bw.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 10Gbs Link}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},legend pos=north east]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256bw10G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256bw10G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw10G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw10G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw10G.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw10G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 10Gbs Link - Zoomed}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0012,xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},
+                legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256bw10G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256bw10G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw10G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw10G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw10G.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw10G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
         \end{itemize}
     \end{figure}
 \end{frame}
@@ -33,7 +109,7 @@
                 \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256lat.dat};
                 \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256lat.dat};
                 \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256lat.dat};
-                \addplot[mark=|, color=magenta,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256lat.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256lat.dat};
                 \legend{s1, s2, s3, s4, s5, s6}
             \end{axis}
         \end{tikzpicture}
@@ -61,7 +137,7 @@
                 \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256freq.dat};
                 \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256freq.dat};
                 \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256freq.dat};
-                \addplot[mark=|, color=magenta,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256freq.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256freq.dat};
                 \legend{s1, s2, s3, s4, s5, s6}
             \end{axis}
         \end{tikzpicture}

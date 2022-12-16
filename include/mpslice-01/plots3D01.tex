@@ -1,5 +1,5 @@
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 1 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 1 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -28,7 +28,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 2 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 2 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -57,7 +57,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 3 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 3 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -87,7 +87,7 @@
 
 
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 4 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 4 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -116,7 +116,7 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 5 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 5 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -146,7 +146,7 @@
 
 
 \begin{frame}
-    \frametitle{Bandwidth CPU-Frequency -s 6 -d 256 Input Size 8192}
+    \frametitle{Bandwidth Latency -s 6 -d 256 Input Size 8192}
 
     \begin{figure}
         \begin{tikzpicture}[scale = 0.70]
@@ -161,6 +161,8 @@
                 %zmin=0,zmax=2,xmax=2.5,ymax=1000,
                 point meta min=0
                 ]
+
+
                 \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq/p6.dat};
             \end{axis}
         \end{tikzpicture}
