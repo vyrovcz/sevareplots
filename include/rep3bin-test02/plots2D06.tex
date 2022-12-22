@@ -12,7 +12,8 @@
                 ylabel={runtime [s]}]
         
                 \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/unenc/2D/freqsrep3.dat};
-                \legend{rep3-bin, yao, yaoO}
+                \addplot[mark=|, color=red, thick] table {data/rep3bin-test02/unenc/2D/freqsrep3-10Gbs.dat};
+                \legend{rep3-bin, rep3-bin-10Gbs}
             \end{axis}
         \end{tikzpicture}
         \begin{itemize}
@@ -36,7 +37,8 @@
                     ]
             
                     \addplot[mark=|, color=blue, thick] table {data/rep3bin-test02/enc/2D/freqsrep3.dat};
-                    \legend{rep3-bin, yao, yaoO}
+                    \addplot[mark=|, color=red, thick] table {data/rep3bin-test02/unenc/2D/freqsrep3-10Gbs.dat};
+                    \legend{rep3-bin, rep3-bin-10Gbs}
                 \end{axis}
             \end{tikzpicture}
             \begin{itemize}
