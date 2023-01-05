@@ -1,0 +1,176 @@
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 1 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p1.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 1 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 2 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p2.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 2 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 3 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p3.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 3 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 4 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p4.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 4 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 5 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p5.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 5 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Bandwidth 10Gbs Frequency -s 6 -d 256 Input Size 8192}
+
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                width=1\textwidth,
+                view/h=30,
+                view/v=10,
+                colormap/cool,
+                y dir=reverse,
+                xlabel={frequency [GHz]}, ylabel={bandwidth [Mbs]}, zlabel={runtime [s]},
+                %zmin=0,xmin=1.5,ymin=1,
+                %zmin=0,zmax=2,xmax=2.5,ymax=1000,
+                ymin=1000,point meta min=0
+                ]
+
+                \addplot3[surf] table [z expr=\thisrowno{2} / 256] {data/mpslice-01/3D/bwfreq10Gbs/p6.dat};
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 6 --datatype 256
+            \item Metric: Bandwidth 10Gbs - Frequency - Runtime at input 8192
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+
+\end{frame}

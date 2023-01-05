@@ -1,0 +1,124 @@
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 4 Preprocessing off vs on - 10Gbs}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.01,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1-10Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8-10Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64-10Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128-10Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256-10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 4 -e 0 (Pre off)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.01,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1-10Gbspre1.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8-10Gbspre1.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64-10Gbspre1.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128-10Gbspre1.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256-10Gbspre1.dat};
+                \legend{d1, d8, d64, d128, d256}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 4 -e 1 (Pre on)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 4 Preprocessing off vs on - Zoomed - 10Gbs}
+
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.001,
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1-10Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8-10Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64-10Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128-10Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256-10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 4 -e 0 (Pre off)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.001,
+                xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1-10Gbspre1.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8-10Gbspre1.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64-10Gbspre1.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128-10Gbspre1.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256-10Gbspre1.dat};
+                \legend{d1, d8, d64, d128, d256}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice -s 4 -e 1 (Pre on)
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 4 Time to Preprocess}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={input size}, ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table {data/mpslice-01/2D/p4/d1time2pre.dat};
+                \addplot[mark=|, color=red,    thick] table {data/mpslice-01/2D/p4/d8time2pre.dat};
+                \addplot[mark=|, color=orange, thick] table {data/mpslice-01/2D/p4/d64time2pre.dat};
+                \addplot[mark=|, color=green,  thick] table {data/mpslice-01/2D/p4/d128time2pre.dat};
+                \addplot[mark=|, color=cyan,   thick] table {data/mpslice-01/2D/p4/d256time2pre.dat};
+                \legend{d1, d8, d64, d128, d256}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 4
+            \item Metric: input size - time to preprocess
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}

@@ -1,0 +1,201 @@
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Datatype -d 256 - Split Roles - 10Gbs}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={input size},ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256splitRoles10Gbs.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Datatype -d 256 - Split Roles - 50Gbs}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={input size},ylabel={runtime [s]},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p1/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p2/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p3/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p4/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p5/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p6/d256splitRoles50Gbs.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256
+            \item Metric: input size - runtime
+            \item Specs: 7543(2.8GHz) 512GiB 50Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Datatype -d 256 - Split Roles - 10Gbs vs 50Gbs}
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.00015,xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256splitRoles10Gbs.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256splitRoles10Gbs.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{.41\paperwidth}
+    \begin{figure}
+        \begin{tikzpicture}[scale = 0.70]
+            \begin{axis}[
+                ymax=0.00015,xlabel={input size},legend pos=north west]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p1/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p2/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p3/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p4/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p5/d256splitRoles50Gbs.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p6/d256splitRoles50Gbs.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256
+            \item Metric: input size - runtime
+            \item Specs: 7543(2.8GHz) 512GiB 50Gbits
+        \end{itemize}
+    \end{figure}
+    \end{minipage}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 10Gbs Link}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},legend pos=north east]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256bw10G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256bw10G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw10G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw10G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw10G.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw10G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 10Gbs Link - Zoomed}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0012,xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},
+                legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256bw10G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256bw10G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256bw10G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256bw10G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256bw10G.dat};
+                \addplot[mark=|, color=black,thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256bw10G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 10Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 50Gbs Link}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},legend pos=north east]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p1/d256bw50G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p2/d256bw50G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p3/d256bw50G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p4/d256bw50G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p5/d256bw50G.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p6/d256bw50G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: 7543(2.8GHz) 512GiB 50Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Bandwidth d256 - 50Gbs Link - Zoomed}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0012,xlabel={Bandwidth [Mbs]}, ylabel={runtime [s]},
+                legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p1/d256bw50G.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p2/d256bw50G.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p3/d256bw50G.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p4/d256bw50G.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p5/d256bw50G.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-02/2D/p6/d256bw50G.dat};
+                \legend{s1, s2, s3, s4, s5, s6}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Datatype -d 256 Inputsize 8192
+            \item Metric: bandwidth - runtime
+            \item Specs: 7543(2.8GHz) 512GiB 50Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}

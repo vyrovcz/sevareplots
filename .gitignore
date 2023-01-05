@@ -2,6 +2,11 @@ build/
 *.tar.gz
 *.pdf
 *.ini
+*.svg
+*.html
+*.css
+*.js
+
 
 # common editor backups
 .*.sw?

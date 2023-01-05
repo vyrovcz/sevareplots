@@ -1,0 +1,161 @@
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 1 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0025,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p1/d256splitRoles.dat};
+                \addplot[mark=|, color=black,   thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p1/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 1
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 2 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0018,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d128splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p2/d256splitRoles.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p2/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 2
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 3 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0018,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p3/d256splitRoles.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p3/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 3
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 4 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0012,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p4/d256splitRoles.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p4/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 4
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 5 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0015,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p5/d256splitRoles.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p5/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 5
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MP-Slice Runtimes Protocol -s 6 - Split Roles}
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[
+                ymax=0.0005,xlabel={input size}, ylabel={runtime [s]},legend style={
+                    cells={anchor=west},
+                    legend pos=outer north east
+                }]
+                \addplot[mark=|, color=blue,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d1splitRoles.dat};
+                \addplot[mark=|, color=red,    thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d8splitRoles.dat};
+                \addplot[mark=|, color=orange, thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d64splitRoles.dat};
+                \addplot[mark=|, color=green,  thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d128splitRoles.dat};
+                \addplot[mark=|, color=cyan,   thick] table [y expr=\thisrowno{1} / 6] {data/mpslice-01/2D/p6/d256splitRoles.dat};
+                \addplot[mark=|, color=black,  thick] table [y expr=\thisrowno{1} / 256] {data/mpslice-01/2D/p6/d256splitRoles10Gbs.dat};
+                \legend{d1, d8, d64, d128, d256, d256-10Gbs}
+            \end{axis}
+        \end{tikzpicture}
+        \begin{itemize}
+            \item Ref.Problem: Scalable Search
+            \item Library: MP-Slice - Protocol -s 6
+            \item Metric: input size - runtime
+            \item Specs: D-1518(2.2GHz) 32GiB 1Gbits
+        \end{itemize}
+    \end{figure}
+\end{frame}
